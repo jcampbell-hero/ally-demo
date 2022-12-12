@@ -1,0 +1,2 @@
+This set of pages is meant to demonstrate common accessibility issues.
+"ally-demo-errors.html" is a page with several accessibility errors, and "ally-demo.html" is a page with those accessibility errors not present.

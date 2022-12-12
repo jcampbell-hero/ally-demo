@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accessibility Demo Page - Accessible Example</title>
+    <link rel="icon" href="favicon.png" />
+    <style type="text/css">
+    .skip {
+        position: absolute;
+        top: -1000px;
+        left: -1000px;
+        height: 1px;
+        width: 1px;
+        text-align: left;
+        overflow: hidden;}
+    a.skip:active,
+    a.skip:focus,
+    a.skip:hover {
+        left: 0;
+        top: 0;
+        width: auto;
+        height: auto;
+        overflow: visible;}
+    #colorBox{
+        background-color: #4D4D4D;
+        max-width: 700px;}
+    .normalText{color:#ffffff; padding:10px;}
+    .largeText{font-size: 24px;
+        color:#ffffff;
+        padding:10px;}
+    img{max-width: 95%;}
+    button{margin:5px;}
+    label{margin:5px;}
+    input{margin:5px;}
+    </style>
+  </head>
+ 
+<body>
+    <a href="#content" class="skip">Skip to content</a> 
+    <br />
+    <nav>
+        <a href="#">Nav Item One</a> |
+        <a href="#">Nav Item Two</a> |
+        <a href="#">Nav Item Three</a> |
+        <a href="#">Nav Item Four</a> |
+        <a href="#">Nav Item Five</a> |
+        <a href="#">Nav Item Six</a> |
+        <a href="#">Nav Item Seven</a> |
+        <a href="#">Nav Item Eight</a> |
+        <a href="#">Nav Item Nine</a> |
+        <a href="#">Nav Item Ten</a>
+    </nav>
+<main id="content">
+    <h1>Accessibility Demo Page - Accessible Example</h1>
+    <a href="ally-demo-errors.html">Switch to inaccessible example</a>
+    <br /> <br />
+    <img src="whale.jpg" alt="A whale breaching the surface of the ocean with its tail.">
+    <br />
+    <img src="divider.png" alt="">
+    <h2>Heading Level Two</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <h3>Heading Level Three</h3>
+        <ul>
+            <li>List Item One
+                <br /><a href="#" aria-label="Read more about List Item One">Read more...</a>
+            </li>
+            <li>List Item Two</li>
+            <li>List Item Three</li>
+            <li>List Item Four</li>
+            <li>List Item Five</li>
+        </ul>
+        <a href="#"><img src="image-link.png" alt="Visit another page"></a>
+        <div id="colorBox">
+            <p class="normalText">Normal size text must have a contrast ratio of at least 4.5 to 1.</p>
+            <p class="largeText">Large size text must have a contrast ratio of at least 3 to 1.</p>
+        </div>
+        <form>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" placeholder=""><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" placeholder=""><br>
+                <button type="button" onclick="alert('Thank you for your submission.')">Submit</button>
+              </form> 
+        </form>
+    </main>
+</body>
+</body>
+</html>
